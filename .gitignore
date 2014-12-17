@@ -1,0 +1,6 @@
+*~
+#*#
+*_assh_*
+*.swp
+node_modules/
+build/

@@ -1,0 +1,43 @@
+{
+  "name": "ose",
+  "preferGlobal": true,
+  "version": "0.1.0",
+  "author": "Jan Snasel <snaselj@gmail.com>",
+  "description": "Open Smart Environment Framework",
+  "contributors": [
+    {
+      "name": "Jan Snasel",
+      "email": "snaselj@gmail.com"
+    },
+    {
+      "name": "Fred Rooks",
+      "email": "fred@fredrooks.com"
+    }
+  ],
+  "main": "./lib/index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opensmartenvironment/ose.git"
+  },
+  "keywords": [
+    "open smart environment",
+    "library",
+    "framework"
+  ],
+  "dependencies": {
+    "commander": "*",
+    "diacritics": "*",
+    "microtime": "*",
+    "underscore": "*",
+    "underscore.string": "*",
+    "wolfy87-eventemitter": "*",
+    "ws": "*"
+  },
+  "license": "GPL-3.0+",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "devDependencies": {
+    "wolfy87-eventemitter": "^4.2.10"
+  }
+}

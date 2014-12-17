@@ -1,0 +1,14 @@
+{
+    "name": "OSE",
+    "description": "OSE core library",
+    "version": "0.0.1",
+    "url": "http://opensmartenvironment.org/",
+    "options": {
+        "outdir": "build/apidoc",
+        "linkNatives": "true",
+        "attributesEmit": "true",
+        "selleck": "true",
+        "markdown": "true",
+        "exclude": "depends,node_modules"
+    }
+}
