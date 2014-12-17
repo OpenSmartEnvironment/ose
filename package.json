@@ -1,9 +1,9 @@
 {
   "name": "ose",
   "preferGlobal": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Jan Snasel <snaselj@gmail.com>",
-  "description": "Open Smart Environment Framework",
+  "description": "Open Smart Environment framework",
   "contributors": [
     {
       "name": "Jan Snasel",
