@@ -30,14 +30,11 @@
     "microtime": "*",
     "underscore": "*",
     "underscore.string": "*",
-    "wolfy87-eventemitter": "*",
+    "wolfy87-eventemitter": "^4.2.10",
     "ws": "*"
   },
   "license": "GPL-3.0+",
   "engines": {
     "node": ">=0.10"
-  },
-  "devDependencies": {
-    "wolfy87-eventemitter": "^4.2.10"
   }
 }
