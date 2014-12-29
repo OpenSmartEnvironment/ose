@@ -9,10 +9,10 @@ exports = M.exports;
  */
 
 /**
- * @caption OSE content
+ * @caption Framework content
  *
  * @readme
- * Provides files of OSE framework package to the browser.
+ * Provides files of [ose] package to the browser.
  *
  * @class ose.content
  * @type singleton
