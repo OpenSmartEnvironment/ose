@@ -23,6 +23,7 @@ exports = M.exports;
 exports.addFiles = function() {  // {{{2
   this.addHead('lib/browser.js', 1);
 
+  this.addModule('node_modules/path/path.js', 'path');
   this.addModule('node_modules/events/events.js', 'events');
   this.addModule('node_modules/underscore/underscore-min.js', 'underscore');
   this.addModule('node_modules/underscore.string/lib/underscore.string.js', 'underscore.string');
