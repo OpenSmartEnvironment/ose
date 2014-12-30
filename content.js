@@ -23,13 +23,11 @@ exports = M.exports;
 exports.addFiles = function() {  // {{{2
   this.addHead('lib/browser.js', 1);
 
+  this.addModule('node_modules/events/events.js', 'events');
   this.addModule('node_modules/underscore/underscore-min.js', 'underscore');
   this.addModule('node_modules/underscore.string/lib/underscore.string.js', 'underscore.string');
   this.addModule('node_modules/diacritics/index.js', 'diacritics');
 
-  this.addJs('node_modules/wolfy87-eventemitter/EventEmitter.min.js');
-
-//  this.addModule('lib/action');
   this.addModule('lib/counter');
   this.addModule('lib/entry/command');
   this.addModule('lib/entry/index');
