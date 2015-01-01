@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+wget https://github.com/joyent/node/raw/v0.10.35-release/lib/stream.js -O depends/stream.js
+

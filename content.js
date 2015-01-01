@@ -23,11 +23,27 @@ exports = M.exports;
 exports.addFiles = function() {  // {{{2
   this.addHead('lib/browser.js', 1);
 
-  this.addModule('node_modules/path/path.js', 'path');
+  this.addModule('depends/stream.js', 'stream');
+
+  this.addModule('node_modules/buffer/index.js', 'buffer');
+  this.addModule('node_modules/buffer/node_modules/base64-js/lib/b64.js', 'base64-js');
+  this.addModule('node_modules/buffer/node_modules/ieee754/index.js', 'ieee754');
+  this.addModule('node_modules/diacritics/index.js', 'diacritics');
   this.addModule('node_modules/events/events.js', 'events');
+  this.addModule('node_modules/readable-stream/lib/_stream_duplex.js', '_stream_duplex');
+  this.addModule('node_modules/readable-stream/lib/_stream_passthrough.js', '_stream_passthrough');
+  this.addModule('node_modules/readable-stream/lib/_stream_readable.js', '_stream_readable');
+  this.addModule('node_modules/readable-stream/lib/_stream_transform.js', '_stream_transform');
+  this.addModule('node_modules/readable-stream/lib/_stream_writable.js', '_stream_writable');
+  this.addModule('node_modules/readable-stream/node_modules/inherits/inherits_browser.js', 'inherits');
+  this.addModule('node_modules/readable-stream/node_modules/isarray/index.js', 'isarray');
+  this.addModule('node_modules/readable-stream/node_modules/string_decoder/index.js', 'string_decoder');
+  this.addModule('node_modules/path/path.js', 'path');
+  this.addModule('node_modules/process/browser.js', 'process');
   this.addModule('node_modules/underscore/underscore-min.js', 'underscore');
   this.addModule('node_modules/underscore.string/lib/underscore.string.js', 'underscore.string');
-  this.addModule('node_modules/diacritics/index.js', 'diacritics');
+  this.addModule('node_modules/util/util.js', 'util');
+  this.addModule('node_modules/util/support/isBufferBrowser.js', 'util/support/isBuffer');
 
   this.addModule('lib/counter');
   this.addModule('lib/entry/command');

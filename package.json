@@ -25,14 +25,21 @@
     "framework"
   ],
   "dependencies": {
+    "buffer": "^3.0.0",
     "commander": "^2.6.0",
     "diacritics": "^1.2.1",
     "events": "^1.0.2",
     "microtime": "^1.1.0",
     "path": "^0.4.9",
+    "process": "^0.10.0",
+    "readable-stream": "^1.0.33",
     "underscore": "^1.7.0",
     "underscore.string": "^2.4.0",
+    "util": "^0.10.3",
     "ws": "^0.6.4"
+  },
+  "scripts": {
+    "postinstall": "depends/get"
   },
   "license": "GPL-3.0+",
   "engines": {
