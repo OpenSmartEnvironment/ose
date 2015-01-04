@@ -25,6 +25,8 @@ exports.addFiles = function() {  // {{{2
 
   this.addModule('depends/stream.js', 'stream');
 
+  this.addModule('node_modules/blob-stream/index.js', 'blob-stream');
+  this.addModule('node_modules/blob-stream/node_modules/blob/index.js', 'blob');
   this.addModule('node_modules/buffer/index.js', 'buffer');
   this.addModule('node_modules/buffer/node_modules/base64-js/lib/b64.js', 'base64-js');
   this.addModule('node_modules/buffer/node_modules/ieee754/index.js', 'ieee754');
