@@ -32,6 +32,7 @@ exports.addFiles = function() {  // {{{2
   this.addModule('node_modules/buffer/node_modules/ieee754/index.js', 'ieee754');
   this.addModule('node_modules/diacritics/index.js', 'diacritics');
   this.addModule('node_modules/events/events.js', 'events');
+  this.addModule('node_modules/os-browserify/browser.js', 'os');
   this.addModule('node_modules/readable-stream/lib/_stream_duplex.js', '_stream_duplex');
   this.addModule('node_modules/readable-stream/lib/_stream_passthrough.js', '_stream_passthrough');
   this.addModule('node_modules/readable-stream/lib/_stream_readable.js', '_stream_readable');
