@@ -1,8 +1,7 @@
 'use strict';
 
-var Ose = require('ose');
-var M = Ose.singleton(module, 'ose/lib/http/content');
-exports = M.exports;
+var O = require('ose').object(module, Init, 'ose/lib/http/content');
+exports = O.init();
 
 /** Docs  {{{1
  * @module ose
@@ -20,11 +19,14 @@ exports = M.exports;
  */
 
 // Public {{{1
-exports.addFiles = function() {  // {{{2
+function Init() {  // {{{2
+  O.super.call(this);
+
   this.addHead('lib/browser.js', 1);
 
   this.addModule('depends/stream.js', 'stream');
 
+  this.addModule('node_modules/async/lib/async.js', 'async');
   this.addModule('node_modules/blob-stream/index.js', 'blob-stream');
   this.addModule('node_modules/blob-stream/node_modules/blob/index.js', 'blob');
   this.addModule('node_modules/buffer/index.js', 'buffer');
@@ -48,7 +50,9 @@ exports.addFiles = function() {  // {{{2
   this.addModule('node_modules/util/util.js', 'util');
   this.addModule('node_modules/util/support/isBufferBrowser.js', 'util/support/isBuffer');
 
+//  this.addModule('lib/classes.js');
   this.addModule('lib/counter');
+  this.addModule('lib/deps');
   this.addModule('lib/entry/command');
   this.addModule('lib/entry/index');
   this.addModule('lib/entry/master');
@@ -66,7 +70,6 @@ exports.addFiles = function() {  // {{{2
   this.addModule('lib/logger');
   this.addModule('lib/peer/here');
   this.addModule('lib/peer/index');
-  this.addModule('lib/peer/list');
   this.addModule('lib/peer/remote');
   this.addModule('lib/peer/rx');
   this.addModule('lib/plugins');
@@ -76,15 +79,16 @@ exports.addFiles = function() {  // {{{2
   this.addModule('lib/shard/slave');
   this.addModule('lib/space/index');
   this.addModule('lib/space/list');
-  this.addModule('lib/wrap');
+  this.addModule('lib/space/master');
+  this.addModule('lib/space/slave');
+  this.addModule('lib/subject');
+  this.addModule('lib/wrap.js');
   this.addModule('lib/ws/browser');
   this.addModule('lib/ws/index');
-  this.addModule('lib/ws/master');
-  this.addModule('lib/ws/relay');
-  this.addModule('lib/ws/slave');
+  this.addModule('lib/ws/read');
   this.addModule('lib/ws/writable');
 
-  this.addHandler('config.js', Ose.plugins.respondConfig);
+  this.addHandler('config.js', O.respondConfig);
 };
 
 // }}}1
