@@ -1,7 +1,22 @@
 # Open Smart Environment - Framework
-This package is a part of the OSE suite.
-All packages can be found [on GitHub](https://github.com/opensmartenvironment/).
+Extensible framework for development and rapid prototyping of
+applications based on Node.js and HTML5.
 
+## Features
+- Robust multi-instance architecture
+- Transparent network communication via WebSockets
+- Near real-time synchronization
+- Code sharing between Node.js and web browsers
+- Partitioned data model
+- Extensible via npm packages
+
+## Important links
+This package is a part of the OSE suite. For more information, see the following links:
+- [Framework documentation](http://opensmartenvironment.github.io/doc/#ose)
+- [OSE suite documentation](http://opensmartenvironment.github.io/doc/)
+- [All packages](https://github.com/opensmartenvironment/)
+
+## About OSE
 <b>Open Smart Environment software is a suite for creating
 multi-instance applications that work as a single whole.</b><br>
 Imagine, for example, a personal mesh running on various devices
@@ -37,17 +52,6 @@ to understand the basic principles covered by the
 OSE has the following prerequisites:
 - Node.js (>0.10) running on Debian Jessie and Raspbian
 - Firefox 37 or newer with Web Components enabled
-
-## Package description
-Extensible framework for development and rapid prototyping of
-applications based on Node.js and HTML5.
-
-The framework is being developed as a base for an OSE application
-that manages the physical and virtual environment that a user lives
-in. It brings the ability to easily monitor and control the
-environment, and to automate tasks.
-
-The documentation for "ose" package can be found **[here](http://opensmartenvironment.github.io/doc/#ose#)**.
 
 ## Licence
 This software is released under the terms of the [GNU General
