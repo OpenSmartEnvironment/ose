@@ -1,6 +1,5 @@
 {
   "name": "ose",
-  "preferGlobal": true,
   "version": "0.1.8",
   "author": "Jan Snasel <snaselj@gmail.com>",
   "description": "Open Smart Environment framework",
