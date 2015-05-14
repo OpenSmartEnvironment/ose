@@ -50,7 +50,6 @@ function Init() {  // {{{2
   this.addModule('node_modules/util/util.js', 'util');
   this.addModule('node_modules/util/support/isBufferBrowser.js', 'util/support/isBuffer');
 
-//  this.addModule('lib/classes.js');
   this.addModule('lib/counter');
   this.addModule('lib/deps');
   this.addModule('lib/entry/command');
@@ -60,10 +59,9 @@ function Init() {  // {{{2
   this.addModule('lib/entry/slave');
   this.addModule('lib/field/common');
   this.addModule('lib/field/object');
-  this.addModule('lib/field/lookup');
-  this.addModule('lib/field/lookups');
+//  this.addModule('lib/field/lookup');
+  this.addModule('lib/field/number');
   this.addModule('lib/field/text');
-  this.addModule('lib/field/timestamp');
   this.addModule('lib/index');
   this.addModule('lib/kind');
   this.addModule('lib/link');
