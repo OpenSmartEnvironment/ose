@@ -58,7 +58,7 @@ function Init() {  // {{{2
   this.addModule('lib/entry/master');
 //  this.addModule('lib/entry/readable');
   this.addModule('lib/entry/slave');
-  this.addModule('lib/field/common');
+  this.addModule('lib/field/index');
   this.addModule('lib/field/object');
   this.addModule('lib/field/list');
   this.addModule('lib/field/lookup');
