@@ -78,7 +78,7 @@ exports.addModule('lib/scope');
 exports.addModule('lib/shard/index');
 //  exports.addModule('lib/shard/master');
 exports.addModule('lib/schema/cache');
-exports.addModule('lib/schema/master');
+exports.addModule('lib/schema/remote');
 exports.addModule('lib/shard/slave');
 exports.addModule('lib/shard/trans');
 exports.addModule('lib/space/index');
