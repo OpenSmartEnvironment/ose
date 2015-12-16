@@ -50,6 +50,7 @@ exports.addModule('node_modules/underscore.string/lib/underscore.string.js', 'un
 exports.addModule('node_modules/util/util.js', 'util');
 exports.addModule('node_modules/util/support/isBufferBrowser.js', 'util/support/isBuffer');
 
+exports.addModule('lib/data');
 exports.addModule('lib/deps');
 exports.addModule('lib/diff');
 exports.addModule('lib/entry/command');
@@ -74,7 +75,6 @@ exports.addModule('lib/peer/index');
 exports.addModule('lib/peer/remote');
 exports.addModule('lib/peer/rx');
 exports.addModule('lib/plugins');
-exports.addModule('lib/scope');
 exports.addModule('lib/shard/index');
 //  exports.addModule('lib/shard/master');
 exports.addModule('lib/schema/cache');
