@@ -1,8 +1,8 @@
 'use strict';
 
-var O = require('ose').module(module);
+//const O = require('ose')(module);
 
-var Content = require('../content');
+const Content = require('../content');
 
 Content.addModule('test/diff');
 Content.addModule('test/index');

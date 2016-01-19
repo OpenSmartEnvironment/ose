@@ -1,7 +1,9 @@
 'use strict';
 
-var O = require('ose').object(module, 'ose-test/lib/suite');
-O.prepend('node');
+const O = require('ose')(module)
+  .singleton('ose-test/lib/suite')
+;
+
 exports = O.init('ose/lib/wrap');
 
 var Assert = O.chai.assert
