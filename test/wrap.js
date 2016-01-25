@@ -10,6 +10,53 @@ var Assert = O.chai.assert
 var Equal = Assert.equal;
 
 // Tests {{{1
+exports.add('module', function(cb) {  // {{{2
+  exports.module = require('./module');
+  exports.module.test(this, cb);
+
+  return cb();
+});
+
+exports.add('class1', function(cb) {  // {{{2
+  const class1 = O.getClass('./class1');
+  exports.class1 = require('./class1');
+  Equal(class1, exports.class1);
+  exports.instance1 = new class1('test string 1');
+  Assert(exports.instance1 instanceof class1, 'instance of');
+  Equal(exports.instance1.O, class1.O, 'class.O');
+  exports.instance1.test(this);
+  exports.instance1.testClass(this, 'test string 1');
+  Assert(exports.instance1.tested, 'tested');
+
+  return cb();
+});
+
+exports.add('class2', function(cb) {  // {{{2
+  const class2 = O.getClass('./class2');
+  exports.instance2 = O.new('./class2')('test string 2');
+  Assert(exports.instance2 instanceof exports.class1, 'instance of super');
+  Assert(exports.instance2 instanceof class2, 'instance of 2');
+  Equal(exports.instance2.class2, class2, 'class.O');
+  Equal(class2.O, exports.instance2.O, 'O');
+  exports.instance2.test(this);
+  exports.instance2.testClass(this, 'test string 2');
+  Assert(exports.instance2.tested, 'tested');
+
+  return cb();
+});
+
+exports.add('class3', function(cb) {  // {{{2
+  exports.instance3 = O.new('./class3')('test string 3');
+  Assert(exports.instance3 instanceof exports.class1, 'instance of super');
+  Assert(exports.instance3 instanceof exports.class2, 'instance of super 2');
+  Equal(exports.instance3.class3.O, exports.instance3.O, 'class.O');
+  exports.instance3.test(this);
+  exports.instance3.testClass(this, 'test string 3');
+  Assert(exports.instance3.tested, 'tested');
+
+  return cb();
+});
+
 exports.add('typeof()', function(cb) {  // {{{2
   Equal(O.typeof(undefined), 'undefined', 'undefined');
   Equal(O.typeof(null), 'null', 'null');
