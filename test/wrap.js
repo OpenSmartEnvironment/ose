@@ -32,12 +32,13 @@ exports.add('class1', function(cb) {  // {{{2
 });
 
 exports.add('class2', function(cb) {  // {{{2
-  const class2 = O.getClass('./class2');
+  exports.class2 = O.getClass('./class2');
   exports.instance2 = O.new('./class2')('test string 2');
+
   Assert(exports.instance2 instanceof exports.class1, 'instance of super');
-  Assert(exports.instance2 instanceof class2, 'instance of 2');
-  Equal(exports.instance2.class2, class2, 'class.O');
-  Equal(class2.O, exports.instance2.O, 'O');
+  Assert(exports.instance2 instanceof exports.class2, 'instance of 2');
+  Equal(exports.instance2.class2, exports.class2, 'class.O');
+  Equal(exports.class2.O, exports.instance2.O, 'O');
   exports.instance2.test(this);
   exports.instance2.testClass(this, 'test string 2');
   Assert(exports.instance2.tested, 'tested');
@@ -145,4 +146,3 @@ exports.add('applyError() 3', function(cb) {  // {{{2
 
   return cb();
 });
-

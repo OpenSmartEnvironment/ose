@@ -5,22 +5,14 @@ const O = require('ose')(module)
   .prepend('./module')
 ;
 
+const Equal = O.chai.assert.equal;
+
 function init(val) {
   this.value = val;
 }
 
 O.prototype.class2 = require('./class2');
 O.prototype.class3 = O.getClass('./class3');
-
-(function testNotLoaded() {
-  try {
-    O.new('./class2');
-  } catch {
-    return;
-  }
-
-  throw new Error('Error should be thrown');
-})();
 
 O.prototype.testClass = function(suite, value) {
   this.tested = true;
