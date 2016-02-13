@@ -45,11 +45,13 @@ exports.addModule('node_modules/readable-stream/lib/_stream_readable.js', '_stre
 exports.addModule('node_modules/readable-stream/lib/_stream_transform.js', '_stream_transform');
 exports.addModule('node_modules/readable-stream/lib/_stream_writable.js', '_stream_writable');
 exports.addModule('node_modules/readable-stream/node_modules/isarray/index.js', 'isarray');
+exports.addModule('node_modules/readable-stream/node_modules/process-nextick-args/index.js', 'process-nextick-args');
 exports.addModule('node_modules/readable-stream/node_modules/string_decoder/index.js', 'string_decoder');
+exports.addModule('node_modules/readable-stream/node_modules/util-deprecate/node.js', 'util-deprecate');
 exports.addModule('node_modules/path/path.js', 'path');
 exports.addModule('node_modules/process/browser.js', 'process');
 exports.addModule('node_modules/underscore/underscore-min.js', 'underscore');
-exports.addModule('node_modules/underscore.string/lib/underscore.string.js', 'underscore.string');
+exports.addModule('node_modules/underscore.string/dist/underscore.string.min.js', 'underscore.string');
 exports.addModule('node_modules/util/util.js', 'util');
 exports.addModule('node_modules/util/support/isBufferBrowser.js', 'util/support/isBuffer');
 
